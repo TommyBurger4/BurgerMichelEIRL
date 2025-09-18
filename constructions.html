@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Michel Burger Construction - Nos Constructions</title>
+    <title>Burger Michel EIRL - Nos Constructions</title>
+    <link rel="icon" type="image/webp" href="logo.webp">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <h1>MB Construction</h1>
-            </div>
+            <a href="index.html" class="logo">
+                <img src="logo.webp" alt="MB Construction" />
+            </a>
             <ul class="nav-menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="histoire.html">Notre Histoire</a></li>
-                <li><a href="constructions.html" class="active">Nos Constructions</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-translate="nav.home">Accueil</a></li>
+                <li><a href="histoire.html" data-translate="nav.history">Notre Histoire</a></li>
+                <li><a href="constructions.html" class="active" data-translate="nav.projects">Nos Constructions</a></li>
+                <li><a href="contact.html" data-translate="nav.contact">Contact</a></li>
             </ul>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="fr">
+                    <img src="fr.webp" alt="Français" class="flag-img">
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <img src="en.webp" alt="English" class="flag-img">
+                </button>
+                <button class="lang-btn" data-lang="de">
+                    <img src="de.webp" alt="Deutsch" class="flag-img">
+                </button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -30,7 +42,7 @@
         <section class="portfolio-hero">
             <div class="container">
                 <h1>Nos Constructions</h1>
-                <p class="subtitle">Découvrez nos réalisations récentes</p>
+                <p class="subtitle">Découvrez nos constructions en couverture et isolation</p>
             </div>
         </section>
 
@@ -38,110 +50,151 @@
             <div class="container">
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all">Tout</button>
-                    <button class="filter-btn" data-filter="maison">Maisons</button>
-                    <button class="filter-btn" data-filter="renovation">Rénovations</button>
-                    <button class="filter-btn" data-filter="extension">Extensions</button>
+                    <button class="filter-btn" data-filter="couverture">Couverture</button>
+                    <button class="filter-btn" data-filter="isolation">Isolation</button>
+                    <button class="filter-btn" data-filter="etancheite">Étanchéité</button>
+                    <button class="filter-btn" data-filter="bardage">Bardage</button>
+                    <button class="filter-btn" data-filter="renovation">Rénovation Énergétique</button>
                 </div>
 
                 <div class="projects-grid">
-                    <div class="project-card" data-category="maison">
+                    <div class="project-card" data-category="couverture">
                         <div class="project-image">
-                            <div class="placeholder-img">Maison Moderne</div>
+                            <img src="toit.jpg" alt="Travaux de couverture" />
                         </div>
                         <div class="project-info">
-                            <h3>Villa Contemporaine</h3>
-                            <p class="project-location">Strasbourg</p>
-                            <p class="project-description">Construction complète d'une villa de 200m² avec piscine et jardin paysagé.</p>
+                            <h3>Réfection de Couverture</h3>
+                            <p class="project-location">Bitcherland</p>
+                            <p class="project-description">Rénovation complète de toiture avec pose de nouvelles tuiles et fenêtres de toit.</p>
                             <span class="project-year">2024</span>
                         </div>
                     </div>
 
                     <div class="project-card" data-category="renovation">
                         <div class="project-image">
-                            <div class="placeholder-img">Rénovation Complète</div>
+                            <img src="maison.jpg" alt="Rénovation énergétique" />
                         </div>
                         <div class="project-info">
-                            <h3>Maison Alsacienne</h3>
-                            <p class="project-location">Obernai</p>
-                            <p class="project-description">Rénovation complète d'une maison à colombages du 18ème siècle.</p>
+                            <h3>Rénovation Énergétique</h3>
+                            <p class="project-location">Éguelshardt</p>
+                            <p class="project-description">Amélioration complète de l'enveloppe : isolation des combles et remplacement de la couverture.</p>
                             <span class="project-year">2023</span>
                         </div>
                     </div>
 
-                    <div class="project-card" data-category="extension">
+                    <div class="project-card" data-category="etancheite">
                         <div class="project-image">
-                            <div class="placeholder-img">Extension Moderne</div>
+                            <img src="travail.jpg" alt="Travaux d'étanchéité" />
                         </div>
                         <div class="project-info">
-                            <h3>Extension Familiale</h3>
-                            <p class="project-location">Sélestat</p>
-                            <p class="project-description">Ajout de 60m² pour créer un espace de vie ouvert avec baies vitrées.</p>
+                            <h3>Étanchéité Toiture</h3>
+                            <p class="project-location">Bas-Rhin frontalier</p>
+                            <p class="project-description">Traitement d'étanchéité de toiture avec membrane et protection contre les infiltrations.</p>
                             <span class="project-year">2024</span>
                         </div>
                     </div>
 
-                    <div class="project-card" data-category="maison">
+                    <div class="project-card" data-category="isolation">
                         <div class="project-image">
-                            <div class="placeholder-img">Maison Écologique</div>
+                            <img src="travail2.jpg" alt="Travaux d'isolation" />
                         </div>
                         <div class="project-info">
-                            <h3>Maison Passive</h3>
-                            <p class="project-location">Colmar</p>
-                            <p class="project-description">Construction d'une maison basse consommation avec panneaux solaires.</p>
+                            <h3>Isolation Thermique</h3>
+                            <p class="project-location">Bas-Rhin frontalier</p>
+                            <p class="project-description">Isolation des rampants et combles perdus, certification RGE pour aides financières.</p>
                             <span class="project-year">2023</span>
                         </div>
                     </div>
 
-                    <div class="project-card" data-category="renovation">
+                    <div class="project-card" data-category="couverture">
                         <div class="project-image">
-                            <div class="placeholder-img">Appartement Rénové</div>
+                            <img src="toittoit.jpg" alt="Couverture traditionnelle" />
                         </div>
                         <div class="project-info">
-                            <h3>Loft Industriel</h3>
-                            <p class="project-location">Mulhouse</p>
-                            <p class="project-description">Transformation d'un ancien atelier en loft moderne de 150m².</p>
+                            <h3>Couverture Traditionnelle</h3>
+                            <p class="project-location">Bitcherland</p>
+                            <p class="project-description">Réfection complète d'une toiture avec tuiles terre cuite et zinguerie.</p>
                             <span class="project-year">2024</span>
                         </div>
                     </div>
 
-                    <div class="project-card" data-category="extension">
+                    <div class="project-card" data-category="bardage">
                         <div class="project-image">
-                            <div class="placeholder-img">Véranda</div>
+                            <img src="eglise.jpg" alt="Bardage et habillage" />
                         </div>
                         <div class="project-info">
-                            <h3>Véranda Bioclimatique</h3>
-                            <p class="project-location">Haguenau</p>
-                            <p class="project-description">Installation d'une véranda de 35m² avec pergola bioclimatique.</p>
+                            <h3>Bardage Patrimoine</h3>
+                            <p class="project-location">Éguelshardt</p>
+                            <p class="project-description">Habillage et finitions extérieures d'un bâtiment historique avec matériaux traditionnels.</p>
                             <span class="project-year">2023</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="isolation">
+                        <div class="project-image">
+                            <img src="car.jpg" alt="Équipe isolation" />
+                        </div>
+                        <div class="project-info">
+                            <h3>Isolation Combles</h3>
+                            <p class="project-location">Bitcherland</p>
+                            <p class="project-description">Isolation de combles aménagés avec matériaux haute performance thermique.</p>
+                            <span class="project-year">2024</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="stats">
-                    <div class="stat-item">
-                        <h3>250+</h3>
-                        <p>Projets réalisés</p>
+        <section class="why-us">
+            <div class="container">
+                <h2 data-translate="why.title">Pourquoi nous choisir ?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3 data-translate="why.experience.title">+20 Ans d'Expérience</h3>
+                        <p data-translate="why.experience.desc">Plus de 20 ans d'expertise en couverture, isolation et étanchéité</p>
                     </div>
-                    <div class="stat-item">
-                        <h3>98%</h3>
-                        <p>Clients satisfaits</p>
+                    <div class="feature">
+                        <h3 data-translate="why.mobile.title">Mobile dans le Bitcherland</h3>
+                        <p data-translate="why.mobile.desc">Intervention rapide dans tout le Bitcherland et Bas-Rhin près de la Lorraine</p>
                     </div>
-                    <div class="stat-item">
-                        <h3>20+</h3>
-                        <p>Années d'expérience</p>
+                    <div class="feature">
+                        <h3 data-translate="why.rge.title">Certification RGE</h3>
+                        <p data-translate="why.rge.desc">Reconnu Garant de l'Environnement pour vos aides financières</p>
                     </div>
                 </div>
+            </div>
+        </section>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Michel Burger Construction - Tous droits réservés</p>
-            <p>Entreprise de construction générale</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Burger Michel EIRL</h4>
+                    <p>Spécialiste couverture et isolation<br>Certification RGE</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:0672171920">06 72 17 19 20</a></p>
+                    <p><a href="mailto:tomijoan78@gmail.com">tomijoan78@gmail.com</a></p>
+                    <p>24A Rue nationale, 57230 Éguelshardt</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <p><a href="https://www.facebook.com/burgermicheleirl" target="_blank" rel="noopener">
+                        <svg class="facebook-icon" viewBox="0 0 24 24" width="18" height="18">
+                            <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                        Facebook</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Michel Burger Construction - Tous droits réservés</p>
+            </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
