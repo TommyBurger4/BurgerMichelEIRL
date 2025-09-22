@@ -73,14 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
 
             const formData = {
-                name: document.getElementById('name').value,
+                nom: document.getElementById('nom').value,
+                prenom: document.getElementById('prenom').value,
+                telephone: document.getElementById('telephone').value,
                 email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                projectType: document.getElementById('projectType').value,
-                budget: document.getElementById('budget').value,
-                timeline: document.getElementById('timeline').value,
-                description: document.getElementById('description').value,
-                expectations: document.getElementById('expectations').value
+                objet: document.getElementById('objet').value,
+                description: document.getElementById('description').value
             };
 
             // Sauvegarder les données localement
@@ -99,35 +97,30 @@ document.addEventListener('DOMContentLoaded', function() {
             // Préparer les données pour Web3Forms
             const web3FormsData = {
                 access_key: WEB3FORMS_ACCESS_KEY,
-                subject: `Nouvelle demande de ${formData.name} - MB Construction`,
-                from_name: formData.name,
+                subject: `${formData.objet} - Demande de ${formData.prenom} ${formData.nom}`,
+                from_name: `${formData.prenom} ${formData.nom}`,
                 email: formData.email,
                 to: "nellpatouparvedy@gmail.com",
                 message: `
-NOUVELLE DEMANDE DE PROJET
+NOUVELLE DEMANDE DE CONTACT
 
 INFORMATIONS CLIENT:
 ====================
-Nom: ${formData.name}
+Nom: ${formData.nom}
+Prénom: ${formData.prenom}
 Email: ${formData.email}
-Téléphone: ${formData.phone}
+Téléphone: ${formData.telephone}
 
-DÉTAILS DU PROJET:
-==================
-Type de projet: ${formData.projectType}
-Budget estimé: ${formData.budget || 'Non spécifié'}
-Délai souhaité: ${formData.timeline || 'Non spécifié'}
+OBJET:
+======
+${formData.objet}
 
-DESCRIPTION DU PROJET:
-======================
+DESCRIPTION:
+============
 ${formData.description}
 
-ATTENTES DU CLIENT:
-===================
-${formData.expectations}
-
 ---
-Message envoyé depuis le site MB Construction
+Message envoyé depuis le site Burger Michel EIRL
 Date: ${new Date().toLocaleString('fr-FR')}
                 `
             };

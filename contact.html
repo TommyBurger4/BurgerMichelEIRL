@@ -52,8 +52,18 @@
                         <h2>Décrivez votre projet</h2>
                         <form id="contactForm" class="contact-form">
                             <div class="form-group">
-                                <label for="name">Nom complet *</label>
-                                <input type="text" id="name" name="name" required>
+                                <label for="nom">Nom *</label>
+                                <input type="text" id="nom" name="nom" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="prenom">Prénom *</label>
+                                <input type="text" id="prenom" name="prenom" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telephone">Téléphone *</label>
+                                <input type="tel" id="telephone" name="telephone" required>
                             </div>
 
                             <div class="form-group">
@@ -62,55 +72,14 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="phone">Téléphone *</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="projectType">Type de projet *</label>
-                                <select id="projectType" name="projectType" required>
-                                    <option value="">Sélectionnez un type</option>
-                                    <option value="construction">Construction neuve</option>
-                                    <option value="renovation">Rénovation</option>
-                                    <option value="extension">Extension</option>
-                                    <option value="autre">Autre</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="budget">Budget estimé</label>
-                                <select id="budget" name="budget">
-                                    <option value="">Sélectionnez une fourchette</option>
-                                    <option value="< 50000">Moins de 50 000€</option>
-                                    <option value="50000-100000">50 000€ - 100 000€</option>
-                                    <option value="100000-200000">100 000€ - 200 000€</option>
-                                    <option value="200000-500000">200 000€ - 500 000€</option>
-                                    <option value="> 500000">Plus de 500 000€</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="timeline">Délai souhaité</label>
-                                <select id="timeline" name="timeline">
-                                    <option value="">Sélectionnez un délai</option>
-                                    <option value="urgent">Urgent (< 1 mois)</option>
-                                    <option value="3mois">1-3 mois</option>
-                                    <option value="6mois">3-6 mois</option>
-                                    <option value="1an">6-12 mois</option>
-                                    <option value="flexible">Flexible</option>
-                                </select>
+                                <label for="objet">Objet *</label>
+                                <input type="text" id="objet" name="objet" required placeholder="Objet de votre demande">
                             </div>
 
                             <div class="form-group full-width">
-                                <label for="description">Description de votre projet *</label>
+                                <label for="description">Description *</label>
                                 <textarea id="description" name="description" rows="6" required
-                                    placeholder="Décrivez votre projet en détail : vos besoins, vos attentes, la surface concernée, etc."></textarea>
-                            </div>
-
-                            <div class="form-group full-width">
-                                <label for="expectations">Qu'attendez-vous de notre entreprise ? *</label>
-                                <textarea id="expectations" name="expectations" rows="4" required
-                                    placeholder="Dites-nous ce que vous recherchez : conseil, devis, accompagnement complet, etc."></textarea>
+                                    placeholder="Décrivez votre demande en détail"></textarea>
                             </div>
 
                             <button type="submit" class="submit-btn">Envoyer ma demande</button>
