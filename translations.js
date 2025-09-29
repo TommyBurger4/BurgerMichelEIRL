@@ -5,14 +5,15 @@ const translations = {
         'nav.history': 'Notre Histoire',
         'nav.projects': 'Nos Constructions',
         'nav.contact': 'Contact',
+        'nav.language': 'Langue',
 
         // Hero Section
-        'hero.title': 'Michel Burger Construction',
-        'hero.tagline': 'Bâtisseur de vos rêves depuis plus de 20 ans',
+        'hero.title': 'Burger Michel EIRL',
+        'hero.tagline': 'Artisan couvreur depuis 2005',
         'hero.cta': 'Demander un devis',
 
-        // Services
-        'services.title': 'Nos Spécialités',
+        // Gallery
+        'gallery.title': 'Nos Réalisations',
         'services.couverture.title': 'Couverture / Toiture',
         'services.couverture.desc': 'Pose, rénovation et entretien de toitures (tuiles, fenêtres de toit, etc.). Expertise complète pour tous types de couvertures.',
         'services.isolation.title': 'Isolation',
@@ -46,7 +47,11 @@ const translations = {
         'footer.company.desc': 'Spécialiste couverture et isolation<br>Certification RGE',
         'footer.contact': 'Contact',
         'footer.follow': 'Suivez-nous',
-        'footer.rights': '© 2024 Michel Burger Construction - Tous droits réservés'
+        'footer.cgu': 'CGU',
+        'footer.legal': 'Mentions légales',
+        'footer.cookies': 'Cookies',
+        'footer.privacy': 'Politique de confidentialité',
+        'footer.rights': '© 2025 Burger Michel EIRL - Tous droits réservés'
     },
 
     en: {
@@ -55,14 +60,15 @@ const translations = {
         'nav.history': 'Our History',
         'nav.projects': 'Our Constructions',
         'nav.contact': 'Contact',
+        'nav.language': 'Language',
 
         // Hero Section
-        'hero.title': 'Michel Burger Construction',
-        'hero.tagline': 'Building your dreams for over 20 years',
+        'hero.title': 'Burger Michel EIRL',
+        'hero.tagline': 'Master roofer since 2005',
         'hero.cta': 'Request a quote',
 
-        // Services
-        'services.title': 'Our Specialties',
+        // Gallery
+        'gallery.title': 'Our Projects',
         'services.couverture.title': 'Roofing / Covering',
         'services.couverture.desc': 'Installation, renovation and maintenance of roofs (tiles, roof windows, etc.). Complete expertise for all types of roofing.',
         'services.isolation.title': 'Insulation',
@@ -96,7 +102,11 @@ const translations = {
         'footer.company.desc': 'Roofing and insulation specialist<br>RGE Certification',
         'footer.contact': 'Contact',
         'footer.follow': 'Follow us',
-        'footer.rights': '© 2024 Michel Burger Construction - All rights reserved'
+        'footer.cgu': 'Terms of Use',
+        'footer.legal': 'Legal Notice',
+        'footer.cookies': 'Cookies',
+        'footer.privacy': 'Privacy Policy',
+        'footer.rights': '© 2025 Burger Michel EIRL - All rights reserved'
     },
 
     de: {
@@ -105,14 +115,15 @@ const translations = {
         'nav.history': 'Unsere Geschichte',
         'nav.projects': 'Unsere Bauten',
         'nav.contact': 'Kontakt',
+        'nav.language': 'Sprache',
 
         // Hero Section
-        'hero.title': 'Michel Burger Construction',
-        'hero.tagline': 'Ihre Träume bauen seit über 20 Jahren',
+        'hero.title': 'Burger Michel EIRL',
+        'hero.tagline': 'Dachdecker-Handwerker seit 2005',
         'hero.cta': 'Angebot anfordern',
 
-        // Services
-        'services.title': 'Unsere Spezialitäten',
+        // Gallery
+        'gallery.title': 'Unsere Projekte',
         'services.couverture.title': 'Bedachung / Dachdeckung',
         'services.couverture.desc': 'Installation, Renovierung und Wartung von Dächern (Ziegel, Dachfenster usw.). Komplette Expertise für alle Arten von Bedachungen.',
         'services.isolation.title': 'Dämmung',
@@ -146,7 +157,11 @@ const translations = {
         'footer.company.desc': 'Spezialist für Bedachung und Dämmung<br>RGE-Zertifizierung',
         'footer.contact': 'Kontakt',
         'footer.follow': 'Folgen Sie uns',
-        'footer.rights': '© 2024 Michel Burger Construction - Alle Rechte vorbehalten'
+        'footer.cgu': 'AGB',
+        'footer.legal': 'Impressum',
+        'footer.cookies': 'Cookies',
+        'footer.privacy': 'Datenschutzrichtlinie',
+        'footer.rights': '© 2025 Burger Michel EIRL - Alle Rechte vorbehalten'
     }
 };
 

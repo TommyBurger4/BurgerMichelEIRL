@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Michel Burger Construction - Notre Histoire</title>
+    <title>Burger Michel EIRL - Notre Histoire</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,10 +13,24 @@
                 <img src="logo.webp" alt="MB Construction" />
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="histoire.html" class="active">Notre Histoire</a></li>
-                <li><a href="constructions.html">Nos Constructions</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-translate="nav.home">Accueil</a></li>
+                <li><a href="histoire.html" class="active" data-translate="nav.history">Notre Histoire</a></li>
+                <li><a href="constructions.html" data-translate="nav.projects">Nos Constructions</a></li>
+                <li><a href="contact.html" data-translate="nav.contact">Contact</a></li>
+                <li class="mobile-language-selector">
+                    <div class="mobile-lang-title" data-translate="nav.language">Langue</div>
+                    <div class="mobile-lang-buttons">
+                        <button class="lang-btn" data-lang="fr">
+                            <img src="fr.webp" alt="Français" class="flag-img">
+                        </button>
+                        <button class="lang-btn" data-lang="en">
+                            <img src="en.webp" alt="English" class="flag-img">
+                        </button>
+                        <button class="lang-btn" data-lang="de">
+                            <img src="de.webp" alt="Deutsch" class="flag-img">
+                        </button>
+                    </div>
+                </li>
             </ul>
             <div class="language-selector">
                 <button class="lang-btn" data-lang="fr">
@@ -149,7 +163,13 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Michel Burger Construction - Tous droits réservés</p>
+                <div class="footer-links">
+                    <a href="cgu.html" data-translate="footer.cgu">CGU</a>
+                    <a href="mentions-legales.html" data-translate="footer.legal">Mentions légales</a>
+                    <a href="cookies.html" data-translate="footer.cookies">Cookies</a>
+                    <a href="politique-confidentialite.html" data-translate="footer.privacy">Politique de confidentialité</a>
+                </div>
+                <p>&copy; 2025 Burger Michel EIRL - Tous droits réservés</p>
             </div>
         </div>
     </footer>
